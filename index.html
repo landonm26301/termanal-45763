@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      $('body').terminal(
+        {
+          catip: function () {
+            this.echo('foiund one ip  ...');
+            wait(2000);
+            this.echo('637.877.006.735');
+            this.echo('type conectip +(ip ubove) to conect.');
+          },
+
+          conectip: function (ip) {
+            this.echo('conecting to ip ' + ip + ' ');
+            this.echo('done!!!');
+          },
+
+          pp: function () {
+            this.echo('8==D');
+          },
+
+          usi: function () {
+            this.echo('-100000 sochal credets');
+          },
+
+          ccd: function () {
+            this.echo('|------------------ccd lst------------------|');
+            this.echo('|  cd  |     name     |         useg        |');
+            this.echo('|  ED  |    discord   |   cpu %19, hhd %15  |');
+            this.echo('|  pf  |    termanal  |   cpu %2, hhd %3    |');
+            this.echo('|  ED  |    credets   |   cpu %67, hhd %87  |');
+            this.echo('|  pf  |    bash      |   cpu %5, hhd %9    |');
+          },
+
+          cat: function () {
+            this.echo($(<img src>));
+          },
+
+          hello: function (what) {
+            this.echo('Hello, ' + what + '. Wellcome.');
+          },
+        },
+        {
+          greetings: 'wellcome to the termanal',
+        }
+      );
+
+      //set timeout function
+      function wait(ms) {
+        var start = new Date().getTime();
+        var end = start;
+        while (end < start + ms) {
+          end = new Date().getTime();
+        }
+      }
+    </script>
+  </body>
+</html>
